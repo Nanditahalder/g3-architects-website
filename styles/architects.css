@@ -161,6 +161,7 @@
     font-weight: 500;
   }
 
+
   .facts-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -175,12 +176,18 @@
      .teams {
       flex-direction: column;
     }
-    .team-img-container {
+    .team-img-container, 
+    .facts-container {
       grid-template-columns: repeat(1, 1fr);
     }
     .our-features {
       margin-left: 20px;
     }
+    .facts-container {
+      justify-items: center;
+      gap: 20px;
+    }
+
   }
 
   @media screen and (min-width: 576px) and (max-width: 992px){
